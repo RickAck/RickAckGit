@@ -23,3 +23,4 @@ public static boolean containsDigit(int i, int digit)
 //Todo: Make it so that it can take any number
 //Not just a digit. Do this by adjusting the 10 to 
 // the exponent of the number that is checked
+//Also fix zero. It always finds a zero
