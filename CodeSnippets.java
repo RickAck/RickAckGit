@@ -1,15 +1,16 @@
 
 public class CodeSnippets {
 
-public static boolean containsDigit(int num, int digit){
-       if(num == digit)
+public static boolean containsNumber(int i, int num)
+{
+       if(i == num)
          return true;
-    if(num < digit)
-        num = -num;
-    while(num >= digit) {
-        if(num % 10 == digit)
+    if(i < num)
+        i = -i;
+    while(i >= num) {
+        if(i % 10 == num)
             return true;
-        num /= 10;
+        i /= 10;
     }
     return false;
   }
