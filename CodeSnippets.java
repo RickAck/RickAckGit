@@ -1,18 +1,17 @@
 
 public class CodeSnippets {
 
-
 // Checks if an integer contains a specific number
-// For exempel (22473251, 73) will return true 
-// (22473251, 74) will return false
-public static boolean containsNumber(int i, int num)
+// For exempel (2243251, 3) will return true 
+// (2243251, 7) will return false
+public static boolean containsDigit(int i, int digit)
 {
-       if(i == num)
+       if(i == digit)
          return true;
-    if(i < num)
+    if(i < digit)
         i = -i;
-    while(i >= num) {
-        if(i % 10 == num)
+    while(i >= digit) {
+        if(i % 10 == digit)
             return true;
         i /= 10;
     }
@@ -20,3 +19,7 @@ public static boolean containsNumber(int i, int num)
   }
   
 }
+
+//Todo: Make it so that it can take any number
+//Not just a digit. Do this by adjusting the 10 to 
+// the exponent of the number that is checked
